@@ -1,0 +1,23 @@
+/* Импорт базовых стилей */
+@import './base/reset.css';
+@import './base/variables.css';
+
+/* Импорт макета */
+@import './layout/header.css';
+@import './layout/content.css';
+@import './layout/footer.css';
+
+/* Импорт темы */
+@import './themes/dark.css';
+
+/*  Импорт адаптивности*/
+@import './responsive/mobile.css';
+
+.page {
+    /*Цвет фона*/
+    background-color: var(--bg-color);
+    /*Цвет текста*/
+    color: var(--text-color);
+    /*Шрифт*/
+    font-family: var(--main-font), sans-serif;
+}

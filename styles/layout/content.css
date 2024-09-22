@@ -1,0 +1,191 @@
+@import "styles/base/variables.css";
+
+
+/*Класс используется для создания контента.*/
+.content {
+
+}
+
+/*Класс используется для создания полей по бокам.*/
+.content-section {
+    /*Боковые внутренние отступы.*/
+    padding-left: var(--side-indentation);
+    padding-right: var(--side-indentation);
+}
+
+
+/*Класс используется для создания заголовков в контенте.*/
+.content__title {
+    font-family: var(--accent-font), sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 90%;
+    margin-top: 7.25%;
+    margin-bottom: 2.5%;
+}
+
+.content__paragraph {
+    font-size: 18px;
+    line-height: normal;
+}
+
+/*Буквица.*/
+.content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
+    display: inline-block;
+    font-size: 1.65em;
+    font-weight: bold;
+    background-color: var(--light-color);
+    padding-top: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    margin-left: -3px;
+}
+
+/*У всех абзацев, кроме последнего в блоке, должны быть нижние отступы.*/
+.content__text-block .content__paragraph:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+/*Ссылки на приложения*/
+.content__paragraph-link {
+    color: currentColor;
+    cursor: pointer;
+}
+
+.content__paragraph-link:focus {
+    outline: 1px solid var(--text-color);
+    padding: 1px;
+}
+
+.content__paragraph-link:focus-visible {
+    outline: 1px solid var(--text-color);
+    padding: 1px;
+}
+
+/*Блок цитат*/
+.content__blockquote {
+    --blockquote-width: 75%;
+
+    width: var(--blockquote-width);
+    margin-left: calc((100% - var(--blockquote-width)) / 2);
+    margin-right: calc((100% - var(--blockquote-width)) / 2);
+    text-align: left;
+    color: currentColor;
+    font-style: italic;
+    line-height: 210%;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 1.5em;
+}
+
+.content__list {
+    font-size: 1.125em;
+    font-family: var(--main-font), sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    color: currentColor;
+    padding-left: 15px;
+}
+
+/*У каждого пункта списка, кроме последнего, должен быть нижний отступ в 10 пикселей.*/
+.content__list .content__list-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/*Блок со списком.*/
+.content__list-item {
+    list-style: none;
+    position: relative;
+    margin-left: 25px;
+}
+
+/*Настройка маркеров.*/
+.content__list-item::before {
+    --item-size-sqr: 15px;
+
+    content: "";
+    position: absolute;
+    width: var(--item-size-sqr);
+    height: var(--item-size-sqr);
+    background-image: url("/images/marker-light.svg");
+    background-position: center;
+    background-size: cover;
+    top: 40%;
+    left: -25px;
+}
+
+/*Изображение*/
+.content__figure {
+    margin: 7% auto;
+    inline-size: calc(100% + 2 * var(--side-indentation));
+    position: relative;
+    inset-inline-end: var(--side-indentation);
+}
+
+.content__picture {
+    width: 100%;
+}
+
+/*Блок с подписью к картинке*/
+.content__picture-caption {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--text-color);
+}
+
+/*Карточка*/
+.content__card {
+    /*Отступы*/
+    margin-top: 7%;
+    /*Генерация пропорций 4:3*/
+    aspect-ratio: 4 / 3;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--text-color);
+
+    /*Цвет текста*/
+    color: var(--text-color);
+}
+
+.content__card-title {
+    /*Шрифт. Настройки текста.*/
+    display: inline-block;
+    font-size: 60px;
+    font-family: var(--accent-font), sans-serif;
+    text-align: var(--hd-title-txt-align);
+    font-weight: var(--hd-title-font-weight);
+    line-height: var(--hd-title-line-height);
+}
+
+.content__card-subtitle {
+    font-size: 18px;
+}
+
+.colored-text {
+  position: relative;
+}
+
+/*Подчеркивание в карточке*/
+.colored-text::after {
+    content: "";
+    position: absolute;
+    inline-size: calc(100% + 8px);
+    height: calc(1em / 4);
+    background-color: var(--light-color);
+    inset-inline-start: -4px;
+    inset-block-end: 10px;
+    z-index: -1;
+}

@@ -1,0 +1,14 @@
+@media (max-width: 360px) {
+    .content__title {
+      margin: 7% 0 2.5%;
+      font-size: 30px;
+    }
+
+    .content__blockquote {
+        line-height: 200%;
+    }
+
+    .content__text-block .content__paragraph:not(:last-child) {
+        margin-block-end: 1.6em;
+    }
+}

@@ -1,0 +1,85 @@
+@import "styles/base/variables.css";
+
+/*Класс используется для создания шапки сайта.*/
+.header {
+    --hd-title-size: clamp(60px, -1.1667rem + 10.6996vw, 7.5rem);
+    --hd-title-txt-align: center;
+    --hd-title-font-weight: 600;
+    --hd-title-line-height: 90%;
+
+    /*Верхний отступ*/
+    padding-top: 10%;
+
+}
+
+/*Класс используется для создания заголовка шапки сайта.*/
+.header--title {
+    /*Цвет текста*/
+    color: var(--text-color);
+    /*Шрифт. Настройки текста.*/
+    font-size: var(--hd-title-size);
+    font-family: var(--accent-font), sans-serif;
+    text-align: var(--hd-title-txt-align);
+    font-weight: var(--hd-title-font-weight);
+    line-height: var(--hd-title-line-height);
+
+    /*Отступы*/
+    margin-bottom: 40px;
+}
+
+/*Меню*/
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    padding: 20px 0;
+}
+
+/* Список кнопок*/
+.header__theme-toggler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/*Темы для кнопок*/
+.header__theme-button {
+    padding: 0;
+    color: currentColor;
+    font: inherit;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.header__theme-button_is-active {
+    font-weight: 700;
+}
+
+.header__theme-button_is-active::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 4.5em;
+    height: calc(1em / 3);
+    background-color: var(--light-color);
+    z-index: -1;
+    left: -8%;
+    bottom: 10%;
+}
+
+.header__theme-button:focus {
+    outline: 1px solid var(--text-color);
+}
+
+.header__theme-button:focus-visible {
+    outline: 1px solid var(--text-color);
+}

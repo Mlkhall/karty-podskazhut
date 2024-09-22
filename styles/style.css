@@ -42,7 +42,7 @@ figure {
 
 /*Класс используется для создания шапки сайта.*/
 .header {
-  --hd-title-size: clamp(60px, -1.1667rem + 10.6996vw, 7.5rem);
+  --hd-title-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
   --hd-title-txt-align: center;
   --hd-title-font-weight: 600;
   --hd-title-line-height: 90%;

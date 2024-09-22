@@ -55,7 +55,7 @@ figure {
   /*Цвет текста*/
   color: var(--text-color);
   /*Шрифт. Настройки текста.*/
-  font-size: var(--hd-title-size);
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
   font-family: var(--accent-font), sans-serif;
   text-align: var(--hd-title-txt-align);
   font-weight: var(--hd-title-font-weight);

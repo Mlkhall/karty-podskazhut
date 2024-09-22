@@ -1,0 +1,25 @@
+.theme_dark {
+    --bg-color: #171717;
+    --text-color: #B3B3B3;
+    --accent-color: transparent;
+    --dark-pattern: url("/images/pattern.svg");
+}
+
+.theme_dark .header__theme-button_is-active::after {
+    background-color: transparent;
+    background-image: var(--dark-pattern);
+}
+
+.theme_dark .colored-text::before {
+    background-color: transparent;
+    background-image: var(--dark-pattern);
+}
+
+.theme_dark .content__list-item::before {
+    background-image: url("/images/marker-dark.svg");
+}
+
+.theme_dark .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+}

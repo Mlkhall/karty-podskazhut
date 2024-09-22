@@ -1,16 +1,16 @@
 :root {
-  /* для цвета фона*/
-  --bg-color: #F3EFEC;
-  /*для цвета текста*/
-  --text-color: #312A4E;
-  /*имя семейства шрифта преобладающего текста (абзацы);*/
-  --main-font: Raleway, sans-serif;
-  /*шрифт для заголовков и особенных текстовых элементов.*/
-  --accent-font: "STIX Two Text", serif;
-  /*цвет акцента*/
-  --accent-color: var(--bg-color);
-  /*Значения боковых отступов.*/
-  --side-indentation: 5vi;
-  /*Цвет светлой темы*/
-  --light-color: #FFAB6B;
+    /* для цвета фона*/
+    --bg-color: #F3EFEC;
+    /*для цвета текста*/
+    --text-color: #312A4E;
+    /*имя семейства шрифта преобладающего текста (абзацы);*/
+    --main-font: Raleway, sans-serif;
+    /*шрифт для заголовков и особенных текстовых элементов.*/
+    --accent-font: "STIX Two Text", serif;
+    /*цвет акцента*/
+    --accent-color: var(--bg-color);
+    /*Значения боковых отступов.*/
+    --side-indentation: 5vi;
+    /*Цвет светлой темы*/
+    --light-color: #FFAB6B;
 }

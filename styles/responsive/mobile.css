@@ -1,7 +1,7 @@
 @media (max-width: 360px) {
     .content__title {
-      margin: 7% 0 2.5%;
-      font-size: 30px;
+        margin: 7% 0 2.5%;
+        font-size: 30px;
     }
 
     .content__blockquote {

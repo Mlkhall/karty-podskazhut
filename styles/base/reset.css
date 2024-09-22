@@ -1,12 +1,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .page {
-  min-inline-size: 360px;
-  margin: 0;
+    min-inline-size: 360px;
+    margin: 0;
 }
 
 p,
@@ -18,5 +18,5 @@ ul,
 ol,
 li,
 figure {
-  margin: 0;
+    margin: 0;
 }
